@@ -1,7 +1,7 @@
-import { FormWithCustomHook } from "./components/FormWithCustomHook"
+import { MultipleCustomHooks } from "./components/MultipleCustomHooks"
 
 export const HooksApp = () => {
   return (
-    <FormWithCustomHook/>
+    <MultipleCustomHooks/>
   )
 }
