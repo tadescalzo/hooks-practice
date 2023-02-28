@@ -20,7 +20,7 @@ export const Message = () => {
     
   return (
     <>
-        <h3>Usuario ya existe</h3>
+        <h3>Usuario ya existe test</h3>
         {
            JSON.stringify(mouseCoord)
         }
