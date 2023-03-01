@@ -10,15 +10,8 @@ export const useFetch = (url) => {
   
     const getFetch = async() =>{
 
-        setState({
-            ...state,
-            isLoading:true
-        })
-
         const resp = await fetch(url)
         const data = await resp.json()
-
-        console.log(data)
 
         setState({
             ...state,
@@ -33,8 +26,8 @@ export const useFetch = (url) => {
     
   
     return({
-        ...state,
-        state,
-        setState
+        data: state.data,
+        isLoading: state.isLoading,
+        hasError: state.hasError
    })
 }
