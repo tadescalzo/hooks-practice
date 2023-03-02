@@ -1,6 +1,6 @@
-import { useCounter } from "../hooks/useCounter";
-import { useFetch } from "../hooks/useFetch"
+import { useCounter, useFetch } from "../hooks";
 import { CardQuote } from "./CardQuote";
+import { Loading } from "./Loading";
 
 export const MultipleCustomHooks = () => {
 
@@ -15,14 +15,9 @@ export const MultipleCustomHooks = () => {
       <hr />
       
       {
-        isLoading ? (
-          <h2 className="alert alert-info text-center">
-          Loading...
-          </h2>
-        ):
-        (
-          <CardQuote quote={quote} author={author} />
-        )
+        isLoading 
+        ? <Loading/> 
+        : <CardQuote quote={quote} author={author} />
       }
       <button 
       className="btn btn-primary" 

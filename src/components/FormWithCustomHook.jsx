@@ -12,7 +12,7 @@ export const FormWithCustomHook = () => {
   return (
     <>
     <h1>Formulario</h1>
-
+    {console.log('test')}
     <input type="text" 
         className="form-control mt-2"
         placeholder="Username"

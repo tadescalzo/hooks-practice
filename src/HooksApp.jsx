@@ -1,7 +1,7 @@
-import { MultipleCustomHooks } from "./components/MultipleCustomHooks"
+import { FocusScreen } from "./components/FocusScreen"
 
 export const HooksApp = () => {
   return (
-    <MultipleCustomHooks/>
+    <FocusScreen/>
   )
 }
