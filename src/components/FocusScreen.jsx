@@ -5,7 +5,7 @@ export const FocusScreen = () => {
   const inputRef = useRef();
 
   const setFocus = () =>{
-    console.log(inputRef)
+    inputRef.current.select()
   }
 
   return (

@@ -1,7 +1,7 @@
-import { FocusScreen } from "./components/FocusScreen"
+import { Layout } from "./components/Layout"
 
 export const HooksApp = () => {
   return (
-    <FocusScreen/>
+    <Layout/>
   )
 }
