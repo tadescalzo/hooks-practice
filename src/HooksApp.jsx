@@ -1,7 +1,8 @@
-import { Layout } from "./components/Layout"
+import { Padre } from "./components/Padre"
+
 
 export const HooksApp = () => {
   return (
-    <Layout/>
+    <Padre/>
   )
 }
